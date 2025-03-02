@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">                                                                                                        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sessão</title>
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/bigscreen.css">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 600px)">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+    @font-face{
+        font-family: 'letraMao';
+        src:url(../font_texto/CatShop.ttf);
+    }
+
+    @keyframes expandModal{
+        0% {
+        transform: translate(-50%, -50%) scale(0.8); /* Começa pequeno */
+        opacity: 0;
+        }
+        100% {
+        transform: translate(-50%, -50%) scale(1); /* Expande para o tamanho original */
+        opacity: 1;
+        }
+    }
+
+    :root{
+        --cor1 : #aceccc;
+        --cor2 : #4e8e70;
+        --cor3 : #176087;
+        --cor4 : #979291;
+        --cor5 : #000;
+        --cor6 : #fff;
+
+        --letraManuscrito : 'letraMao', sans-serif; 
+        --letranormal:  Arial, Helvetica, sans-serif;
+
+    }
+
+    img.logo{
+        width: 150px;
+    }
+    </style>
+</head>
+<body>
+    <!-- Pagina de iniciar sessão -->
+
+    <section id="iniciarSessao">
+        <div class="registro">
+            <div class="dados loginForm"> 
+                <img class="logo" src="img/logo.png" alt="">
+                <form class="inserirDados">
+                    <div class="nomeUsuario emailUsuario">
+                        <div class="inputContainer">
+                        <label for="usuario"><span class="material-symbols-outlined emojipessoa">person</span></label>
+                        <input type="text" name="usuario" id="usuario" placeholder="Insira o e-mail " class="email">
+                        </div>
+                        <span id="erroEmail" class="erromensagem" ></span>
+                    </div>
+                    
+                    <div class="senhaUsuario">
+                        <div class="inputContainer">
+                        <label for="senha"><span class="material-symbols-outlined emojichave">key</span></label>
+                        <input type="password" name="senha" id="senha" placeholder="Insira sua senha"  class="senhas senhasolho">
+                        <span class="material-symbols-outlined olho" >visibility</span>
+                        </div>
+                        
+                        <span id="erroSenha" class="erromensagem" ></span>
+                    </div>
+
+                    <button type="button" class="btn Entrar">Entrar</button>
+                </form>
+
+                <p class="txtfim">Não tem conta? <a href="#" class="registrarLink">Registrar-se</a></p>
+            </div>
+
+            <div class="dados registroForm" id="encolher">
+                <img class="logo" src="img/logo.png" alt="">
+                <form class="inserirDados inserirDadosEspaco">
+                    <div class="nomeUsuario">
+                        <div class="inputContainer">
+                            <label for="novousuario"><span class="material-symbols-outlined emojipessoa">person</span></label>
+                            <input type="text" name="novousuario" id="novousuario" placeholder="Nome do utilizador">
+                        </div>
+                        <span id="msgnovousuarioErro" class="erromensagem"></span>
+                    </div>
+                    <div class="emailUsuario">
+                        <div class="inputContainer">
+                            <label for="novoemail"><span class="material-symbols-outlined emojiemail">
+                            mail</span></label>
+                            <input type="email" name="novoemail"  id="novoemail" placeholder="Seu e-mail" class="email">
+                        </div>
+                        <span id="erroEmail" class="erromensagem" >*</span>
+                    </div>
+                    <div class="senhaUsuario">
+                        <div class="inputContainer">
+                            <label for="novasenha"><span class="material-symbols-outlined emojichave">key</span></label>
+                            <input type="password" name="novasenha" id="novasenha" placeholder="crie uma senha" class="senhas senhasolho registrar">
+                            <span class="material-symbols-outlined 
+                            olho" >visibility</span>
+                        </div>
+                        <span id="erroNovaSenha" class="erromensagem" ></span>
+                        
+                    </div>
+                    <button type="button" class="btn btnRegistro">Registrar-se</button>
+                </form>
+                <p class="txtfim">Já tem conta? <a href="#" class="loginLink">Iniciar Sessão</a></p>
+            </div>
+           <div class="imagem1"></div>
+
+           
+    
+        </div>
+    </section>
+
+
+    <div class="fundoModal" id="fundoModal"></div>
+    <div class="modal" id="modal">
+        <div class="conteudo_modal">
+            <div class="linhaModal">
+                <span class="material-symbols-outlined emojiModal">
+                    dangerous
+                </span>
+                <div class="textoModal">
+                <h4 class="tituloModal">
+                    Ocorreu um erro
+                </h4>
+                <p class="paragrafoModal">personalização</p>
+                </div>
+            </div>
+        <hr>
+        <button type="button" class="erroModal" onclick="fecharModal()">Fechar</button>
+    </div>
+   </div>
+
+
+    <script src="js/cadastro.js"></script>
+</body>
+</html>

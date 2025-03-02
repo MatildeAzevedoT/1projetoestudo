@@ -1,0 +1,51 @@
+section#iniciarSessao {
+    height: 641px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.registro{
+    display: flex;
+    flex-direction: column;
+}
+
+/*  Imagem no topo */
+div.imagem1 {
+    width: 100%;
+    height: 250px;
+    order: 1;
+}
+
+/*  Formulário abaixo */
+div.dados {
+    width: 87%;
+    padding: 20px;
+    order: 2;
+}
+
+img.logo {
+    width: 110px;
+}
+
+/*  Ajuste dos inputs */
+form.inserirDados {
+    width: 82%;
+    padding: 9px;
+}
+
+button.btn {
+    margin-top: 0;
+    margin-left: 1px;
+}
+
+p.txtfim{
+    text-align: center;
+    margin-top: 4px;
+}
+
+.inputContainer, 
+.inputContainer input, 
+button.btn {
+    width: 100%;
+    max-width: 350px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpStyle</title>
+    <link rel="stylesheet" href="css/bigscreenIndex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        @font-face{
+            font-family: 'letraMao';
+            src:url(../font_texto/CatShop.ttf);
+        }
+    
+        @keyframes expandModal{
+            0% {
+            transform: translate(-50%, -50%) scale(0.8); /* Começa pequeno */
+            opacity: 0;
+            }
+            100% {
+            transform: translate(-50%, -50%) scale(1); /* Expande para o tamanho original */
+            opacity: 1;
+            }
+        }
+    
+        :root{
+            --cor1 : #aceccc;
+            --cor2 : #4e8e70;
+            --cor3 : #176087;
+            --cor4 : #979291;
+            --cor5 : #000;
+            --cor6 : #fff;
+    
+            --letraManuscrito : 'letraMao', sans-serif; 
+            --letranormal:  Arial, Helvetica, sans-serif;
+    
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png"  alt="" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="">Mulher</a></li>
+                <li><a href="">Homem</a></li>
+                <li><a href="">Criança</a></li>
+
+                <li><a href=""><span class="material-symbols-outlined">
+                    favorite
+                    </span></a></li>
+                <li><a href=""><span class="material-symbols-outlined">
+                    shopping_cart
+                    </span></a></li>
+                <li><a href=""><span class="material-symbols-outlined">
+                    account_circle
+                    </span></a></li>
+            </ul>
+        </nav>
+        <div class="imagemcapa"></div>
+    </header>
+    <div class="limpar"></div>
+    <h3>Novidades</h3>
+    <hr>
+    <div id="novidades">
+        <div class="novidadesconteudo">
+            <img src="img/img1.jpg" alt="">
+            <p>Vestido verde</p>
+            <p>40.99€</p>
+        </div>
+        <div class="novidadesconteudo">
+            <img src="img/img2.jpg" alt="">
+            <p>Botas</p>
+            <p>29.99€</p>
+        </div>
+        <div class="novidadesconteudo">
+            <img src="img/img3.jpg" alt="">
+            <p>Conjunto Fato</p>
+            <p>120.00€</p>
+        </div>
+        <div class="novidadesconteudo">
+            <img src="img/img4.jpg" alt="">
+            <p>bolsa de mão</p>
+            <p>20.00€</p>
+        </div>
+    </div>
+
+    <div id="nvcolecao">
+        <div  class="novacolecao" id="imgnvc1"></div>
+        <div  class="novacolecao" id="imgnvc2"></div>
+    </div>
+    
+    <div id="publicidade">
+        <div id="imagens">
+            <img id="img1" src="img/equipadetrabalho.jpg">
+            <img id="img2" src="img/sessaofotografica.jpg">
+            <hr id="linhapub">
+        </div>
+        <div id="textpub">
+            <h3>Porque UpStyle?</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quos itaque ipsum! Unde dolorem amet blanditiis dolores cupiditate, sit deleni...</p>
+            <a href="#"><p id="textlink">Saber Mais</p></a>
+        </div>
+    </div>
+</body>
+</html>
