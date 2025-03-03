@@ -25,10 +25,10 @@
         }
     }
 
-    @supports (padding: max(0px)) {
+    @media (max-width: 600px) {
         body {
-            padding-top: max(10px, env(safe-area-inset-top)); 
-            padding-bottom: max(10px, env(safe-area-inset-bottom)); 
+            padding-top: env(safe-area-inset-top); 
+            padding-bottom: env(safe-area-inset-bottom); 
         }
     }
 
