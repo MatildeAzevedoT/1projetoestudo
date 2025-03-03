@@ -3,15 +3,13 @@ html,body{
     overflow-x: hidden;
 }
 
+meta{
+    display: block;
+}
+
 body{
     background-attachment: fixed;
     overflow: hidden;
-    -webkit-padding-start: env(safe-area-inset-left); /* Para dispositivos com recorte de tela */
-    -webkit-padding-end: env(safe-area-inset-right);
-    -webkit-padding-top: env(safe-area-inset-top); /* Ajuste no topo */
-    -webkit-padding-bottom: env(safe-area-inset-bottom); /* Ajuste no fundo */
-    padding-top: 0;
-    padding-bottom: 0;
 }
 
 
@@ -23,7 +21,6 @@ section#iniciarSessao {
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
-    padding: 10px;
 }
 
 div.registro{
