@@ -25,6 +25,13 @@
         }
     }
 
+    @supports (padding: max(0px)) {
+        body {
+            padding-top: max(10px, env(safe-area-inset-top)); 
+            padding-bottom: max(10px, env(safe-area-inset-bottom)); 
+        }
+    }
+
     :root{
         --cor1 : #aceccc;
         --cor2 : #4e8e70;
