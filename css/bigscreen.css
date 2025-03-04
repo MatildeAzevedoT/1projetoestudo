@@ -2,7 +2,7 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #aceccc; /* Ou a cor do seu fundo */
+    background: linear-gradient(135deg, #aceccc 0%, #4e8e70 50%, #00000089 100%);
     background-size: cover;
     background-position: center;
     overflow-x: hidden;

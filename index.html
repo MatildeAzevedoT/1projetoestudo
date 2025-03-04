@@ -12,17 +12,6 @@
             src:url(../font_texto/CatShop.ttf);
         }
     
-        @keyframes expandModal{
-            0% {
-            transform: translate(-50%, -50%) scale(0.8); /* Começa pequeno */
-            opacity: 0;
-            }
-            100% {
-            transform: translate(-50%, -50%) scale(1); /* Expande para o tamanho original */
-            opacity: 1;
-            }
-        }
-    
         :root{
             --cor1 : #aceccc;
             --cor2 : #4e8e70;
@@ -38,69 +27,25 @@
         </style>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="img/logo.png"  alt="" class="logo"></a>
-        <nav>
-            <ul>
-                <li><a href="">Mulher</a></li>
-                <li><a href="">Homem</a></li>
-                <li><a href="">Criança</a></li>
+   <header>
+        <div id="imgfundoindex">
+            <nav id="barranav">
+                <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="120px"></a>
+                <ul id="linkbarranav">
+                    <li>
+                        <a href="">Novidades</a>
+                    </li>
+                    <li><a href="#">Coleções</a></li>
+                    <li><a href="#">Sustentabilidade</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">iconsol</a></li>
+                    <li><a href="#">iconfav</a></li>
+                    <li><a href="#">iconcarro</a></li>
+                    <li><a href="#">iconlogin</a></li>
+                </ul>
+            </nav>
 
-                <li><a href=""><span class="material-symbols-outlined">
-                    favorite
-                    </span></a></li>
-                <li><a href=""><span class="material-symbols-outlined">
-                    shopping_cart
-                    </span></a></li>
-                <li><a href="login.html"><span class="material-symbols-outlined">
-                    account_circle
-                    </span></a></li>
-            </ul>
-        </nav>
-        <div class="imagemcapa"></div>
-    </header>
-    <div class="limpar"></div>
-    <h3>Novidades</h3>
-    <hr>
-    <div id="novidades">
-        <div class="novidadesconteudo">
-            <img src="img/img1.jpg" alt="">
-            <p>Vestido verde</p>
-            <p>40.99€</p>
         </div>
-        <div class="novidadesconteudo">
-            <img src="img/img2.jpg" alt="">
-            <p>Botas</p>
-            <p>29.99€</p>
-        </div>
-        <div class="novidadesconteudo">
-            <img src="img/img3.jpg" alt="">
-            <p>Conjunto Fato</p>
-            <p>120.00€</p>
-        </div>
-        <div class="novidadesconteudo">
-            <img src="img/img4.jpg" alt="">
-            <p>bolsa de mão</p>
-            <p>20.00€</p>
-        </div>
-    </div>
-
-    <div id="nvcolecao">
-        <div  class="novacolecao" id="imgnvc1"></div>
-        <div  class="novacolecao" id="imgnvc2"></div>
-    </div>
-    
-    <div id="publicidade">
-        <div id="imagens">
-            <img id="img1" src="img/equipadetrabalho.jpg">
-            <img id="img2" src="img/sessaofotografica.jpg">
-            <hr id="linhapub">
-        </div>
-        <div id="textpub">
-            <h3>Porque UpStyle?</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quos itaque ipsum! Unde dolorem amet blanditiis dolores cupiditate, sit deleni...</p>
-            <a href="#"><p id="textlink">Saber Mais</p></a>
-        </div>
-    </div>
+   </header>
 </body>
 </html>
