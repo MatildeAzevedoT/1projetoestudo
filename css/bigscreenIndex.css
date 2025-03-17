@@ -4,6 +4,114 @@ body{
 }
 
 #imgfundoindex{
+    position: relative;
+    height: 646px;
+}
+
+#imgfundoindex::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: url(../img/max-harlynking-CDLBz2lPpLM-unsplash.jpg) center center;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1; /* Coloca a imagem no fundo */
+}
+
+nav#barranav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.429);
+    border-radius: 20px 20px 0 0;
+}
+
+
+a.logo{
+    padding-left: 60px;
+}
+
+img#imageminicio{
+    width: 304.7px;
+    float: right;
+    margin-right: 178px;
+    margin-top: 61px;
+    border-radius: 44px;
+}
+
+div#apresentacao{
+    width: 636px;
+    margin-top: 131px;
+    margin-left: 112px;
+
+}
+
+div#apresentacao h1{
+    font-size: 48px;
+    font-family: var(--letraManuscrito);
+    font-weight: normal;
+}
+
+div#apresentacao p{
+    font-family: var(--letranormal);
+    color: var(--cor6);
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+div#apresentacao a{
+    margin: 0px 20px ;
+    padding: 12px 15px;
+    text-decoration: none;
+    border: 2px solid #BAA67B;
+    color: var(--cor6);
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+
+div#apresentacao a#linkcolecoes{
+    background-color: #BAA67B;
+}
+
+div#apresentacao a#linkcolecoes:hover{
+    background-color: transparent;
+    box-shadow: -8px 5px 5px rgba(0, 0, 0, 0.426);
+}
+
+div#apresentacao a#linksabermais:hover{
+    background-color: #BAA67B;
+    box-shadow: -8px 5px 5px rgba(0, 0, 0, 0.426);
+}
+
+
+ul#linkbarranav, div.icones ul {
+   display: flex;
+    list-style: none;
+    gap: 35px;
+    padding-top: 7px;
+
+}
+
+ul#linkbarranav{
+    margin-left: 150px;
+}
+
+ul#linkbarranav div.icones{
+    padding-top: 0px;
+}
+
+div.icones ul{
+    margin-left: 221px;
+}
+
+ul#linkbarranav li a, div.icones ul li a{
+    text-decoration: none;
+    color: black;
 }
 
