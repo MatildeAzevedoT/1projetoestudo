@@ -51,10 +51,16 @@
                     <li id="carrinho"><a href="#"><span class="material-symbols-outlined">
                         shopping_cart
                         </span></a></li>
-                    <li><a href="login.html"><span class="material-symbols-outlined">
-                        login
-                        </span></a></li>
+                    <li><span id="username-display">Carregando...</span></li>
+                    <li id="iconeRegistro"></li>
                     </ul>
+                    <div id="menuUsuario" class="menu-oculto">
+                        <ul id="menudousuario">
+                            <li><a href="index.html">⭐ Favoritos</a></li>
+                            <li><a href="index.html">🛒 Meus Pedidos</a></li>
+                            <li id="logout">🚪 Logout</li>
+                        </ul>
+                    </div>
                 </div> 
             </nav>
 
@@ -69,7 +75,42 @@
 
    </header>
 
+   <script>
+    function exibirNomeUsuario() {
+            let usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
 
+            let menuUsuario = document.getElementById('menuUsuario')
+
+            if(!iconeRegistro || !menuUsuario) return
+
+            if (usuarioLogado) {
+                document.getElementById('username-display').textContent = `Olá, ${usuarioLogado.usuario}!`;
+                document.getElementById('iconeRegistro').innerHTML = '<span class="material-symbols-outlined" id= "iconeUsuario">face</span>'
+                document.getElementById('iconeUsuario').style.cursor = 'pointer'
+                document.getElementById('iconeUsuario').addEventListener('click', function(e){
+                    e.stopPropagation()
+                    menuUsuario.style.display = menuUsuario.style.display === 'block' ? 'none' : 'block'
+                })
+
+                document.addEventListener('click', function(e){
+                    if(!menuUsuario.contains(e.target) && e.target.id !== 'iconeUsuario'){
+                        menuUsuario.style.display = 'none'
+                    }
+                })
+            } else {
+                document.getElementById('username-display').textContent = 'Entrar/Registrar';
+                document.getElementById('iconeRegistro').innerHTML = '<a href="login.html" onclick="logout()"><span class="material-symbols-outlined">login</span></a>'
+            }
+        }
+
+        function logout() {
+            localStorage.removeItem('usuarioLogado');
+            window.location.replace('login.html'); // Redireciona para a página de login
+        }
+
+        document.addEventListener('DOMContentLoaded', exibirNomeUsuario);
+    </script>
    
 </body>
+
 </html>

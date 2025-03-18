@@ -220,12 +220,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Verificar se os dados existem no localStorage
         if (usuarioSalvo) {
-            window.location.replace('index.html')
-        }else {
-               
-                
-            erroModal('Usuário ou senha inválidos.')
-
+            // **Salvar o usuário logado**
+            localStorage.setItem('usuarioLogado', JSON.stringify(usuarioSalvo));
+    
+            // Redirecionar para a página principal
+            window.location.replace('index.html');
+        } else {
+            erroModal('Usuário ou senha inválidos.');
         }
     }
 

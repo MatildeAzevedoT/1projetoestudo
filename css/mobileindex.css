@@ -18,8 +18,8 @@ a.logo, div.icones ul {
 }
 
 div.icones {
-    width: 50%;
-    padding-left: 51px;
+    width: 58%;
+    padding-left: 28px;
 }
 
 div.icones ul{
@@ -55,6 +55,10 @@ img#imageminicio {
     display: none;
 }
 
+.menu-oculto{
+    z-index: 999999;
+}
+
 div#apresentacao {
     width: 354px;
     height: 50vh;
@@ -63,4 +67,5 @@ div#apresentacao {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: 0;
 }
