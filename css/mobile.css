@@ -19,7 +19,7 @@ body{
 
 section#iniciarSessao {
     height: /* 641px */ auto;
-    width: 79%;
+    width: 76%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -38,7 +38,7 @@ div.registro{
 /*  Imagem no topo */
 div.imagem1 {
     width: 100%;
-    height: 250px;
+    height: 244px;
     order: 1;
     position: relative;
 }
