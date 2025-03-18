@@ -32,6 +32,15 @@ div.icones ul li {
     padding: 0 3px;
 
 }
+div.icones ul li#carrinho {
+    position: absolute;
+    top: 653%;
+    left: 84%;
+    background-color: white;
+    padding: 16px;
+    border-radius: 74px;
+}
+
 
 ul#linkbarranav {
     margin: 0;
@@ -54,8 +63,4 @@ div#apresentacao {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-a#linkcolecoes, a#linksabermais {
-   
 }
